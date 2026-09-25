@@ -13,7 +13,7 @@ export const nav = [
 export const stats = [
   { value: "10", label: "Films in the series" },
   { value: "18", label: "AI characters to interview" }, // TODO: confirm count against real character rosters.
-  { value: "14-day", label: "Free faculty trial" }, // From Brand Notes; fills the empty third slot.
+  { value: "7-day", label: "Free faculty trial" }, // Confirmed 2026-09-20: 7 days, one film. Trial access is not built yet.
 ];
 
 export type Slide = {
