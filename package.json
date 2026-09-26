@@ -11,9 +11,15 @@
     "db:login": "supabase login",
     "db:link": "supabase link",
     "db:push": "supabase db push",
-    "db:check": "node --env-file-if-exists=.env.local scripts/check-supabase.mjs"
+    "db:check": "node --env-file-if-exists=.env.local scripts/check-supabase.mjs",
+    "db:verify-live": "node --env-file-if-exists=.env.local scripts/verify-tenancy-live.mjs",
+    "db:seed-test": "node --env-file-if-exists=.env.local scripts/seed-test-schools.mjs",
+    "db:clean-test": "node --env-file-if-exists=.env.local scripts/seed-test-schools.mjs --clean",
+    "db:seed-content": "node --env-file-if-exists=.env.local scripts/seed-content.mjs",
+    "test:chat": "node --env-file-if-exists=.env.local scripts/test-chat-live.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.116.0",
     "next": "16.3.5",

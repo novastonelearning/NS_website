@@ -23,7 +23,7 @@ export function FilmGrid({ films }: { films: Film[] }) {
                 sizes="(min-width: 1180px) 380px, (min-width: 700px) 50vw, 100vw"
                 className="object-cover"
               />
-              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(11,7,19,0)_45%,rgba(11,7,19,0.85)_100%)]" />
+              <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-ink-900/0 from-45% to-ink-900/85" />
               {/* The pill's ::after stretches over the whole card so the entire card opens the trailer. */}
               <button
                 type="button"
@@ -75,11 +75,11 @@ function TrailerModal({ film, onClose }: { film: Film | null; onClose: () => voi
       }}
       // Clicks on the backdrop land on the <dialog> element itself.
       onClick={(e) => e.target === e.currentTarget && dialogRef.current?.close()}
-      className="m-auto w-[min(920px,calc(100%-32px))] max-w-none overflow-hidden rounded-[18px] border border-paper-100/16 bg-ink-700 p-0 text-paper-100 backdrop:bg-[rgba(6,4,11,0.88)] backdrop:backdrop-blur-[8px]"
+      className="m-auto w-[min(920px,calc(100%-32px))] max-w-none overflow-hidden rounded-[18px] border border-paper-100/16 bg-ink-700 p-0 text-paper-100 backdrop:bg-ink-900/88 backdrop:backdrop-blur-[8px]"
     >
       {film && (
         <>
-          <div className="relative grid aspect-video place-items-center bg-[#08050E]">
+          <div className="relative grid aspect-video place-items-center bg-ink-900">
             {film.trailerVimeoId ? (
               <iframe
                 src={`https://player.vimeo.com/video/${film.trailerVimeoId}?autoplay=1&dnt=1`}

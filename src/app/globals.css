@@ -1,17 +1,29 @@
 @import "tailwindcss";
 
-/* Design tokens from the Claude Design handoff (README "Design Tokens"). */
+/* Novastone "Honey and dusk" palette (decided 2026-09-26). Every color on the
+   site resolves to one of these tokens; change a value here and it changes
+   everywhere. The token names predate the palette: "plum" is now dusk indigo
+   and "brass" is champagne. Exported notebooks repeat a few of these as
+   literal hex (PRINT in TalkToCharacters) because Word can't read CSS vars. */
 @theme inline {
-  --color-ink-900: #0b0713;
-  --color-ink-800: #0f0a1b;
-  --color-ink-700: #150c24;
-  --color-ink-600: #1e1330;
-  --color-ink-500: #221836;
-  --color-plum-700: #200537;
-  --color-plum-600: #22143b;
-  --color-gold-500: #f4aa00;
-  --color-gold-400: #ffc53d;
-  --color-brass-500: #ad974f;
+  /* Page and surface ramp, darkest first. */
+  --color-ink-900: #121429;
+  --color-ink-800: #161932;
+  --color-ink-700: #1b1e3c;
+  --color-ink-600: #212447;
+  --color-ink-500: #26284f;
+  --color-ink-400: #313466;
+  /* Header bar, and the dark text that sits on gold. */
+  --color-plum-700: #3e3f86;
+  --color-plum-600: #1e2044;
+  --color-gold-500: #edb44a;
+  --color-gold-400: #f5c76b;
+  --color-brass-500: #c4ac7c;
+  /* Champagne lifted enough to read on the indigo header bar. */
+  --color-brass-300: #d4bf94;
+  --color-success-400: #7fb56b;
+  --color-danger-200: #f3b0b0;
+  --color-danger-500: #dc5050;
   --color-paper-100: #f3efe7;
   --color-paper-200: #ede8de;
   --color-paper-300: #d9d2c6;

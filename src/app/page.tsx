@@ -103,8 +103,8 @@ function Hero() {
           sizes="100vw"
           className="object-cover object-[center_22%]"
         />
-        <div className="absolute inset-x-0 top-0 h-[140px] bg-[linear-gradient(180deg,#0B0713_0%,rgba(11,7,19,0.55)_45%,rgba(11,7,19,0)_100%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-[180px] bg-[linear-gradient(180deg,rgba(11,7,19,0)_0%,rgba(11,7,19,0.9)_72%,#0B0713_100%)]" />
+        <div className="absolute inset-x-0 top-0 h-[140px] bg-linear-to-b from-ink-900 via-ink-900/55 via-45% to-ink-900/0" />
+        <div className="absolute inset-x-0 bottom-0 h-[180px] bg-linear-to-b from-ink-900/0 via-ink-900/90 via-72% to-ink-900" />
       </div>
 
       {/* c. Stat row */}
@@ -124,7 +124,7 @@ function Hero() {
 
 function AiSection() {
   return (
-    <section id="ai" className="bg-[linear-gradient(180deg,#150C24_0%,#22143B_100%)] px-4 py-[104px] sm:px-8">
+    <section id="ai" className="bg-linear-to-b from-ink-700 to-ink-500 px-4 py-[104px] sm:px-8">
       <div className="mx-auto flex max-w-[1180px] flex-wrap items-center gap-[clamp(36px,5vw,64px)]">
         <div className="min-w-0 flex-[1_1_380px]">
           <p className="eyebrow mb-3.5 text-gold-500">Interview the Characters</p>

@@ -21,7 +21,7 @@ export function SiteHeader() {
           <NovastoneMark className="h-10 w-10 shrink-0 text-gold-500" />
           <span className="flex flex-col leading-[1.15]">
             <span className="text-sm font-semibold tracking-[0.14em]">Novastone Learning</span>
-            <span className="font-serif text-[11.5px] uppercase tracking-[0.14em] text-brass-500">
+            <span className="font-serif text-[11.5px] uppercase tracking-[0.14em] text-brass-300">
               Leadership Film Series
             </span>
           </span>
